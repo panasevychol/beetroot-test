@@ -49,7 +49,7 @@
         <hr>
         <h5>
           {{game.name}}
-          <small> | {% for platform in game.platforms %} {{ platform }} {% endfor %}</small>
+          <small> {% for platform in game.platforms %} | {{ platform.abbreviation }} {% endfor %}</small>
         </h5>
 
       {% endfor %}
